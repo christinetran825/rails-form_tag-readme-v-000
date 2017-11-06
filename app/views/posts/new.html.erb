@@ -1,6 +1,7 @@
 <h3>Post Form</h3>
 
 <form action="<%= posts_path %>" method="POST">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <label>Post title:</label><br>
   <input type="text" id="post_title" name="post[title]"><br>
 
