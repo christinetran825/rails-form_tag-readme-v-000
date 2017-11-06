@@ -446,3 +446,11 @@ Processing by PostsController#create as HTML
   [1m[36m (6.4ms)[0m  [1mcommit transaction[0m
 Redirected to http://165.227.31.156:50660/posts
 Completed 302 Found in 41ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/posts" for 104.173.218.129 at 2017-11-06 04:38:18 +0000
+Cannot render console from 104.173.218.129! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.3ms)
